@@ -1,62 +1,35 @@
-------------------------------------------------Visualizations / Reporting Strategy-------------------------------------
+Support Model:  How will the various data infrastructure components be maintained?
+High Availability:  What HA requirements are in place?  Disaster Recovery, backups, etc?
+System Upgrades:  What schedule is in place for routine patches, maintenance?
+Environments:  How are data products/apps promoted up environments?  Dev, QA, Staging, Prod
+Costs:  Which data infrastructure components are the most cost ineffective?
+Automation:  What tools for CI/CD processes in place?
+Cloud-Native:  What tools are in place for cloud-native development?
+Monitoring:  What logging and alerting capabilities exist?
+Are there any redundancies or inefficiencies in current infrastructure ?​
+Cloud Strategy: What is the existing On-premise/ Cloud/Hybrid Strategy ?
+Is cloud managed as IaaS or PaaS ? Is it managed internally or by an external vendor ?​
+What SLAs currently exist for cloud deployment ? Are they being consistently met ?​
+How often is the production data copied back to acceptance environments to ensure good data quality for testing ?​
+Are there any factors that are affecting performance?​
+What data retention policies are in place ?​
+What strategies are in place for system upgrades ? How is this managed without impact to Business projects.​
+Do any solutions have a need for High Availability and Disaster recovery ? Are the Business Continuity plans available.​
+Is there an infrastructure strategy for Enterprise Mobility ?
 
-Desire for exception based reporting
-We change the business in field so frequently, its not simple to keep It aligned
-
-need to track new metrics based on business changes
-
-Add new lines in 13 week report
-new requests come in that make some additinal changes to add and remove lines
-its a constantly updated report. Not necessarily a bad things
-information and metrics that the operaion needs can be delivered in a different way. Requires a change in culture.
-changing culture around busness to enable self -sufficency
-are there opportunies to consume data into other ways.
-getting bsuiness to shift to newer consumption layers might be more challenging
-
-exception based reporting. Might still be challenging
-action based reporting
-we dont need a report for everything. business needs to bo on board to be able to seve themselves. 
-plan to educate and guage the appetite from business for self-serve
+Do Loves have DevOps framework?
+Does the framework covers all aspects such as Development, Deployment and Monitoring?
+Do they have any code reviews?
+How they manage their code and configuration? Any repositories? - 
+Azure DevOps to some extent
+Explain the process of development build and deployment.
+Any tools for automated testing?
+Any tools for production deployment?
+Do they follow CI/CD methodology? Explain
+Get details on below as much as possible by pipeline
+SAP Landscape Diagram
+D
 
 
-it would be nice if we have some centralized data to do adhoc-query by business themselves
-number of dashboards, reports are too many. yet the number of reports to be developed are still ob the rise
-needs a shift in the culture around delivery and consumption of data
-
-field goes to the sharepoint list to consume the reports
-
-15-20 dashboards
-  95% are tableau
-
-metrics about usage can be obtained from Tableau server. Sharepoint does not have such feature.
-
-lot of reports where they may not be used when people leave.
-needs to users change over time but they don't necessarily change reports, they combine multiple reports and paste into other reporting.
-multiple versions of the similar reports
-
-customer asks for reports - no clear idea on guidance how to build it
-sometimes adhoc reporting turns into on-going usage. 
-The sharepoint list has reports from both usiness and IT delivered reports. Finiding report ownership is issue when business develops reports and new people are on-boarded.
-
-No UX design with the end users.
-IT designs and builds reports and then iteratively change it
-IT would like to have inputs from business around wireframing with business before building new reports.
-Business Analysts sometime sometimes know based on experience what the end users might need and create Mockups.
-
-planning reports ? Not used. users just use some vendor tools for planning and budgeting.
-
-Within some buisness units a lot of manual work is being done to publish the reports.
-There is no annotation done on any reports today to save any kind of commentary around numbers.
-
-NLP chatbot could be another channel in the future for self-serve data, but needs underlying technologies and processes to be ready first for data hub, governance etc. Will not need this in near future.
-
-Salesforce also has interface to consume reports. they just want the data and create reports within salesforce
-
-Strengths - No red tape.
-          - deversity of people with strengths in various reporting technologies
-          - business is lot more data led than 5 years ago
-          - lot of reports built around vendor processes to identify issues with their feeds
-
-Roles are maintained in sharepoint for field operations for exeutive notebooks etc..
 
 
